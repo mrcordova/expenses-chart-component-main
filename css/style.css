@@ -22,3 +22,26 @@
   font-weight: 700;
   font-style: normal;
 }
+
+body {
+  height: 100vh;
+  height: 100svh;
+  display: grid;
+  place-content: center;
+  background-color: var(--cream);
+}
+
+.my-balance-container {
+  background-color: var(--soft-red);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+}
+.chart-container {
+  display: flex;
+  justify-content: space-evenly;
+}
