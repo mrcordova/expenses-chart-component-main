@@ -55,7 +55,7 @@ main {
   /* Desktop */
   border-radius: 20px;
   padding-inline: 2.2rem 2.5rem;
-  padding-block: 1.6rem;
+  padding-block: 1.65rem;
 }
 .my-balance-container > img {
   /* Mobile */
@@ -108,7 +108,7 @@ main {
   /* gap: 0.75rem; */
   /* Mobile */
   margin-block-start: 4rem;
-  padding-block-end: 1.95rem;
+  padding-block-end: 1.9rem;
   border-bottom: 2px solid var(--cream);
   gap: 1.2rem;
 }
