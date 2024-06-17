@@ -133,7 +133,15 @@ main {
   border-radius: 4px;
   background-color: var(--soft-red);
 }
-
+.bar:hover {
+  cursor: pointer;
+  background-color: hsl(from var(--soft-red) h s l / 0.8);
+}
+.bar:hover::before {
+}
+.bar-active:hover {
+  background-color: hsl(from var(--cyan) h s l / 0.8);
+}
 .bar-active {
   background-color: var(--cyan);
 }
