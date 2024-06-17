@@ -35,10 +35,11 @@ main {
   display: flex;
   flex-direction: column;
 
+  gap: clamp(1rem, 0.8592rem + 0.6009vw, 1.4rem);
   /* Mobile */
   /* gap: 1rem; */
   /* Desktop */
-  gap: 1.4rem;
+  /* gap: 1.4rem; */
 }
 
 .my-balance-container {
@@ -48,33 +49,42 @@ main {
   justify-content: space-between;
   color: var(--very-pale-orange);
 
+  border-radius: clamp(0.5rem, 0.2359rem + 1.1268vw, 1.25rem);
+
+  padding-inline: clamp(1.2rem, 0.8479rem + 1.5023vw, 2.2rem)
+    clamp(1.4rem, 1.0127rem + 1.6526vw, 2.5rem);
+
+  padding-block: clamp(1.2rem, 1.0415rem + 0.6761vw, 1.65rem);
   /* Mobile */
   /* border-radius: 8px; */
   /* padding-inline: 1.2rem 1.4rem; */
   /* padding-block: 1.2rem; */
   /* Desktop */
-  border-radius: 20px;
-  padding-inline: 2.2rem 2.5rem;
-  padding-block: 1.65rem;
+  /* border-radius: 20px; */
+  /* padding-inline: 2.2rem 2.5rem; */
+  /* padding-block: 1.65rem; */
 }
 .my-balance-container > img {
+  width: clamp(3.75rem, 3.4859rem + 1.1268vw, 4.5rem);
   /* Mobile */
   /* width: 3.75rem; */
   /* Desktop */
-  width: 4.5rem;
+  /* width: 4.5rem; */
 }
 .balance-amount {
+  font-size: clamp(1.5rem, 1.3239rem + 0.7512vw, 2rem);
   /* Mobile */
   /* font-size: 1.5rem; */
   /* Desktop */
-  font-size: 2rem;
+  /* font-size: 2rem; */
 }
 
 .balance-text {
+  font-size: clamp(0.95rem, 0.8972rem + 0.2254vw, 1.1rem);
   /* Mobile */
   /* font-size: 0.95rem; */
   /* Desktop */
-  font-size: 1.1rem;
+  /* font-size: 1.1rem; */
 }
 
 .main-container {
