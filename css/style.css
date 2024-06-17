@@ -89,8 +89,8 @@ main {
   /* border-radius: 8px; */
   /* Desktop */
   padding-inline: 2.7rem;
-  padding-block: 1.7rem;
-  border-radius: 8px;
+  padding-block: 1.7rem 2.7rem;
+  border-radius: 25px;
 }
 .main-heading {
   /* Mobile */
@@ -148,13 +148,18 @@ main {
 .final-results-container {
   display: flex;
   justify-content: space-between;
-  padding-block-start: 1.5rem;
+  /* Mobile */
+  /* padding-block-start: 1.5rem; *
+  /* Desktop */
+  padding-block-start: 2rem;
 }
 
 .total-container,
 .percentage-container {
   display: flex;
   flex-direction: column;
+
+  line-height: 1.32;
 }
 .percentage-container {
   justify-content: end;
@@ -162,7 +167,10 @@ main {
 }
 .percentage-container > p:first-child {
   margin-inline-start: auto;
-  font-size: 0.95rem;
+  /* Mobile */
+  /* font-size: 0.95rem; */
+  /* Desktop */
+  font-size: 1.1rem;
 }
 .percentage-container > p:last-child {
   line-height: 1.9;
@@ -170,9 +178,15 @@ main {
 .total-container > p:first-child,
 .percentage-container > p:last-child {
   color: var(--medium-brown);
-  font-size: 0.95rem;
+  /* Mobile */
+  /* font-size: 0.95rem; */
+  /* Desktop */
+  font-size: 1.15rem;
 }
 
 .total-amount {
-  font-size: 1.9rem;
+  /* Mobile */
+  /* font-size: 1.9rem; */
+  /* Dekstop */
+  font-size: 3.1rem;
 }
