@@ -69,6 +69,7 @@ main {
   /* inline-size: 21.5rem; */
   padding-inline: 1.2rem;
   padding-block: 1.3rem;
+  border-radius: 8px;
   /* gap: 2.5rem; */
   /* padding-inline: 2.5rem; */
 }
@@ -106,14 +107,32 @@ main {
 .final-results-container {
   display: flex;
   justify-content: space-between;
-  /* padding-block: 2rem; */
+  padding-block-start: 1.5rem;
 }
 
-.total-container {
+.total-container,
+.percentage-container {
   display: flex;
   flex-direction: column;
+}
+.percentage-container {
+  justify-content: end;
+  line-height: 1;
+}
+.percentage-container > p:first-child {
+  margin-inline-start: auto;
+  /* margin-block-start: auto; */
+  font-size: 0.95rem;
+}
+.percentage-container > p:last-child {
+  line-height: 1.9;
 }
 .total-container > p:first-child,
 .percentage-container > p:last-child {
   color: var(--medium-brown);
+  font-size: 0.95rem;
+}
+
+.total-amount {
+  font-size: 1.9rem;
 }
