@@ -70,17 +70,13 @@ main {
   padding-inline: 1.2rem;
   padding-block: 1.3rem;
   border-radius: 8px;
-  /* gap: 2.5rem; */
-  /* padding-inline: 2.5rem; */
 }
 .main-heading {
   font-size: 1.5rem;
 }
 .chart-container {
   display: flex;
-  /* justify-content: space-evenly; */
   text-align: center;
-  /* padding-block: 2rem 1rem; */
   margin-block-start: 2.5rem;
   padding-block-end: 1.4rem;
   border-bottom: 2px solid var(--cream);
@@ -98,6 +94,10 @@ main {
   width: 2.05875rem;
   border-radius: 4px;
   background-color: var(--soft-red);
+}
+
+.bar-active {
+  background-color: var(--cyan);
 }
 
 .day-text {
@@ -121,7 +121,6 @@ main {
 }
 .percentage-container > p:first-child {
   margin-inline-start: auto;
-  /* margin-block-start: auto; */
   font-size: 0.95rem;
 }
 .percentage-container > p:last-child {
