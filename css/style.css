@@ -141,13 +141,17 @@ main {
 .bar[data-amount]:hover::before {
   content: attr(data-amount);
   position: absolute;
-  top: -2.2rem;
+  top: -2.7rem;
   text-align: center;
   right: -0.5rem;
   left: -0.5rem;
-  padding-block: 0.2rem;
+  padding-block: 0.4rem;
   border-radius: 5px;
-  /* padding-inline: 0.1rem; */
+  font-size: 1rem;
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
   color: var(--very-pale-orange);
   background-color: hsl(from var(--dark-brown) h s l / 1);
 }
