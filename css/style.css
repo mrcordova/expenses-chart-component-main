@@ -44,4 +44,11 @@ body {
 .chart-container {
   display: flex;
   justify-content: space-evenly;
+  text-align: center;
+}
+
+.bar {
+  height: 10rem;
+  width: 2.05875rem;
+  background-color: var(--soft-red);
 }
