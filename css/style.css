@@ -103,3 +103,17 @@ main {
   color: var(--medium-brown);
   font-size: 0.8rem;
 }
+.final-results-container {
+  display: flex;
+  justify-content: space-between;
+  /* padding-block: 2rem; */
+}
+
+.total-container {
+  display: flex;
+  flex-direction: column;
+}
+.total-container > p:first-child,
+.percentage-container > p:last-child {
+  color: var(--medium-brown);
+}
