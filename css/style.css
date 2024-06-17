@@ -44,7 +44,24 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
+  border-radius: 8px;
+  padding-inline: 1.2rem 1.4rem;
+  padding-block: 1.2rem;
+
+  color: var(--very-pale-orange);
 }
+.my-balance-container > img {
+  width: 3.75rem;
+}
+.balance-amount {
+  font-size: 1.5rem;
+}
+
+.balance-text {
+  font-size: 0.95rem;
+}
+
 .main-container {
   display: flex;
   flex-direction: column;
