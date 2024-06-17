@@ -67,12 +67,20 @@ main {
   background-color: var(--very-pale-orange);
 
   /* inline-size: 21.5rem; */
-  padding-inline: 1.2rem;
-  padding-block: 1.3rem;
+  /* Moble */
+  /* padding-inline: 1.2rem; */
+  /* padding-block: 1.3rem; */
+  /* border-radius: 8px; */
+  /* Desktop */
+  padding-inline: 2.7rem;
+  padding-block: 1.7rem;
   border-radius: 8px;
 }
 .main-heading {
-  font-size: 1.5rem;
+  /* Mobile */
+  /* font-size: 1.5rem; */
+  /* Desktop */
+  font-size: 2.05rem;
 }
 .chart-container {
   display: flex;
@@ -83,7 +91,7 @@ main {
   /* border-bottom: 2px solid var(--cream); */
   /* gap: 0.75rem; */
   /* Mobile */
-  margin-block-start: 2.5rem;
+  margin-block-start: 4rem;
   padding-block-end: 1.4rem;
   border-bottom: 2px solid var(--cream);
   gap: 1.2rem;
