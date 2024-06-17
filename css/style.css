@@ -47,8 +47,20 @@ body {
   text-align: center;
 }
 
+.bar-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
 .bar {
   height: 10rem;
   width: 2.05875rem;
+  border-radius: 4px;
   background-color: var(--soft-red);
+}
+
+.day-text {
+  color: var(--medium-brown);
+  font-size: 0.8rem;
 }
