@@ -31,6 +31,12 @@ body {
   background-color: var(--cream);
 }
 
+main {
+  background-color: var(--very-pale-orange);
+  display: flex;
+  flex-direction: column;
+}
+
 .my-balance-container {
   background-color: var(--soft-red);
   display: flex;
@@ -40,11 +46,20 @@ body {
 .main-container {
   display: flex;
   flex-direction: column;
+
+  inline-size: 21.5rem;
+  padding-inline: 0.6rem;
+  /* padding-inline: 2.5rem; */
+}
+.main-heading {
+  font-size: 1.5rem;
 }
 .chart-container {
   display: flex;
   justify-content: space-evenly;
   text-align: center;
+  /* padding-block: 2rem 1rem; */
+  border-bottom: 1px solid var(--soft-red);
 }
 
 .bar-container {
