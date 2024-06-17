@@ -139,19 +139,22 @@ main {
   flex-direction: column;
 
   position: relative;
+  gap: clamp(0.3rem, 0.7056rem + -0.4507vw, 0.6rem);
   /* Mobile */
   /* gap: 0.6rem; */
   /* Desktop */
-  gap: 0.3rem;
+  /* gap: 0.3rem; */
 }
 
 .bar {
+  height: clamp(9.4rem, 10.2113rem + -0.9014vw, 10rem);
+  width: clamp(2.05875rem, 1.7066rem + 1.5023vw, 3.05875rem);
   /* Mobile */
   /* height: 10rem; */
   /* width: 2.05875rem; */
   /* Desktop */
-  height: 9.4rem;
-  width: 3.05875rem;
+  /* height: 9.4rem; */
+  /* width: 3.05875rem; */
   border-radius: 4px;
   background-color: var(--soft-red);
 }
@@ -185,19 +188,21 @@ main {
 
 .day-text {
   color: var(--medium-brown);
+  font-size: clamp(0.8rem, 0.7296rem + 0.3005vw, 1rem);
   /* Mobile */
   /* font-size: 0.8rem; */
   /* Desktop */
-  font-size: 1rem;
+  /* font-size: 1rem; */
 }
 .final-results-container {
   display: flex;
   justify-content: space-between;
+
+  padding-block-start: clamp(1.5rem, 1.2535rem + 1.0516vw, 2.2rem);
   /* Mobile */
   /* padding-block-start: 1.5rem; *
   /* Desktop */
-  padding-block-start: 2.2rem;
-  line-height: 1.32;
+  /* padding-block-start: 2.2rem; */
 }
 
 .total-container,
@@ -208,15 +213,18 @@ main {
 .percentage-container {
   justify-content: end;
   line-height: 1;
+
+  margin-block-end: clamp(0rem, -0.1408rem + 0.6009vw, 0.4rem);
   /* Desktoop */
-  margin-block-end: 0.4rem;
+  /* margin-block-end: 0.4rem; */
 }
 .percentage-container > p:first-child {
   margin-inline-start: auto;
+  font-size: clamp(0.95rem, 0.8972rem + 0.2254vw, 1.1rem);
   /* Mobile */
   /* font-size: 0.95rem; */
   /* Desktop */
-  font-size: 1.1rem;
+  /* font-size: 1.1rem; */
 }
 .percentage-container > p:last-child {
   line-height: 1.9;
@@ -224,15 +232,24 @@ main {
 .total-container > p:first-child,
 .percentage-container > p:last-child {
   color: var(--medium-brown);
+
+  font-size: clamp(0.95rem, 0.8866rem + 0.2704vw, 1.13rem);
   /* Mobile */
   /* font-size: 0.95rem; */
   /* Desktop */
-  font-size: 1.13rem;
+  /* font-size: 1.13rem; */
 }
 
 .total-amount {
+  font-size: clamp(1.9rem, 1.4775rem + 1.8028vw, 3.1rem);
   /* Mobile */
   /* font-size: 1.9rem; */
   /* Dekstop */
   font-size: 3.1rem;
+}
+
+@media (min-width: 35rem) {
+  .final-results-container {
+    line-height: 1.32;
+  }
 }
