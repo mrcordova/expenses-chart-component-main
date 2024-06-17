@@ -35,7 +35,10 @@ main {
   display: flex;
   flex-direction: column;
 
-  gap: 1rem;
+  /* Mobile */
+  /* gap: 1rem; */
+  /* Desktop */
+  gap: 1.5rem;
 }
 
 .my-balance-container {
@@ -113,7 +116,11 @@ main {
 .bar-container {
   display: flex;
   flex-direction: column;
-  gap: 0.6rem;
+
+  /* Mobile */
+  /* gap: 0.6rem; */
+  /* Desktop */
+  gap: 0.3rem;
 }
 
 .bar {
@@ -133,7 +140,10 @@ main {
 
 .day-text {
   color: var(--medium-brown);
-  font-size: 0.8rem;
+  /* Mobile */
+  /* font-size: 0.8rem; */
+  /* Desktop */
+  font-size: 1rem;
 }
 .final-results-container {
   display: flex;
