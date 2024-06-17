@@ -43,22 +43,35 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
-  border-radius: 8px;
-  padding-inline: 1.2rem 1.4rem;
-  padding-block: 1.2rem;
-
   color: var(--very-pale-orange);
+
+  /* Mobile */
+  /* border-radius: 8px; */
+  /* padding-inline: 1.2rem 1.4rem; */
+  /* padding-block: 1.2rem; */
+  /* Desktop */
+  border-radius: 20px;
+  padding-inline: 2.2rem 2.5rem;
+  padding-block: 1.6rem;
 }
 .my-balance-container > img {
-  width: 3.75rem;
+  /* Mobile */
+  /* width: 3.75rem; */
+  /* Desktop */
+  width: 4.5rem;
 }
 .balance-amount {
-  font-size: 1.5rem;
+  /* Mobile */
+  /* font-size: 1.5rem; */
+  /* Desktop */
+  font-size: 2rem;
 }
 
 .balance-text {
-  font-size: 0.95rem;
+  /* Mobile */
+  /* font-size: 0.95rem; */
+  /* Desktop */
+  font-size: 1.1rem;
 }
 
 .main-container {
