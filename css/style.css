@@ -89,7 +89,7 @@ main {
   /* border-radius: 8px; */
   /* Desktop */
   padding-inline: 2.7rem;
-  padding-block: 1.7rem 2.7rem;
+  padding-block: 1.7rem 2.4rem;
   border-radius: 25px;
 }
 .main-heading {
@@ -151,19 +151,20 @@ main {
   /* Mobile */
   /* padding-block-start: 1.5rem; *
   /* Desktop */
-  padding-block-start: 2rem;
+  padding-block-start: 2.2rem;
+  line-height: 1.32;
 }
 
 .total-container,
 .percentage-container {
   display: flex;
   flex-direction: column;
-
-  line-height: 1.32;
 }
 .percentage-container {
   justify-content: end;
   line-height: 1;
+  /* Desktoop */
+  margin-block-end: 0.4rem;
 }
 .percentage-container > p:first-child {
   margin-inline-start: auto;
@@ -181,7 +182,7 @@ main {
   /* Mobile */
   /* font-size: 0.95rem; */
   /* Desktop */
-  font-size: 1.15rem;
+  font-size: 1.13rem;
 }
 
 .total-amount {
