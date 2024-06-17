@@ -117,6 +117,7 @@ main {
   display: flex;
   flex-direction: column;
 
+  position: relative;
   /* Mobile */
   /* gap: 0.6rem; */
   /* Desktop */
@@ -137,7 +138,18 @@ main {
   cursor: pointer;
   background-color: hsl(from var(--soft-red) h s l / 0.8);
 }
-.bar:hover::before {
+.bar[data-amount]:hover::before {
+  content: attr(data-amount);
+  position: absolute;
+  top: -2.2rem;
+  text-align: center;
+  right: -0.5rem;
+  left: -0.5rem;
+  padding-block: 0.2rem;
+  border-radius: 5px;
+  /* padding-inline: 0.1rem; */
+  color: var(--very-pale-orange);
+  background-color: hsl(from var(--dark-brown) h s l / 1);
 }
 .bar-active:hover {
   background-color: hsl(from var(--cyan) h s l / 0.8);
