@@ -77,10 +77,16 @@ main {
 .chart-container {
   display: flex;
   text-align: center;
+  /* Mobile */
+  /* margin-block-start: 2.5rem; */
+  /* padding-block-end: 1.4rem; */
+  /* border-bottom: 2px solid var(--cream); */
+  /* gap: 0.75rem; */
+  /* Mobile */
   margin-block-start: 2.5rem;
   padding-block-end: 1.4rem;
   border-bottom: 2px solid var(--cream);
-  gap: 0.75rem;
+  gap: 1.2rem;
 }
 
 .bar-container {
@@ -90,8 +96,12 @@ main {
 }
 
 .bar {
-  height: 10rem;
-  width: 2.05875rem;
+  /* Mobile */
+  /* height: 10rem; */
+  /* width: 2.05875rem; */
+  /* Desktop */
+  height: 9.3rem;
+  width: 3.05875rem;
   border-radius: 4px;
   background-color: var(--soft-red);
 }
