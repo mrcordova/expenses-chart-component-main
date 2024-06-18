@@ -41,9 +41,7 @@ window.addEventListener("load", () => {
 
   const highestAmount = highestBar.getAttribute("data-amount").slice(1);
   const maxHeightStr = getComputedStyle(highestBar).getPropertyValue("height");
-  //   console.log(maxHeightStr);
   const maxHeight = maxHeightStr.slice(0, maxHeightStr.indexOf("px")) / 16;
-  //   console.log(maxHeight);
   for (const barContainerDiv of barContainerDivs) {
     const bar = barContainerDiv.querySelector(".bar");
     const barAmount = bar.getAttribute("data-amount").slice(1);
