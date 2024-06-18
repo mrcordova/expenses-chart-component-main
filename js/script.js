@@ -11,12 +11,6 @@ const dayNames = {
 };
 window.addEventListener("load", () => {
   const barContainerDivs = document.querySelectorAll(".bar-container");
-  //   const highestAmountObj = data.reduce((currVal, nextVal) => {
-  //     if (currVal.amount > nextVal.amount) {
-  //       return currVal;
-  //     }
-  //     return nextVal;
-  //   });
 
   const currentDay = dayNames[new Date().getDay()];
   const currentDayBar = document.getElementById(`${currentDay}`);
