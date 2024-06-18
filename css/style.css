@@ -36,10 +36,7 @@ main {
   flex-direction: column;
 
   gap: clamp(1rem, 0.8592rem + 0.6009vw, 1.4rem);
-  /* Mobile */
-  /* gap: 1rem; */
-  /* Desktop */
-  /* gap: 1.4rem; */
+ 
 }
 
 .my-balance-container {
@@ -55,36 +52,17 @@ main {
     clamp(1.4rem, 1.0127rem + 1.6526vw, 2.5rem);
 
   padding-block: clamp(1.2rem, 1.0415rem + 0.6761vw, 1.65rem);
-  /* Mobile */
-  /* border-radius: 8px; */
-  /* padding-inline: 1.2rem 1.4rem; */
-  /* padding-block: 1.2rem; */
-  /* Desktop */
-  /* border-radius: 20px; */
-  /* padding-inline: 2.2rem 2.5rem; */
-  /* padding-block: 1.65rem; */
 }
 .my-balance-container > img {
   width: clamp(3.75rem, 3.4859rem + 1.1268vw, 4.5rem);
-  /* Mobile */
-  /* width: 3.75rem; */
-  /* Desktop */
-  /* width: 4.5rem; */
 }
 .balance-amount {
   font-size: clamp(1.5rem, 1.3239rem + 0.7512vw, 2rem);
-  /* Mobile */
-  /* font-size: 1.5rem; */
-  /* Desktop */
-  /* font-size: 2rem; */
 }
 
 .balance-text {
   font-size: clamp(0.95rem, 0.8972rem + 0.2254vw, 1.1rem);
-  /* Mobile */
-  /* font-size: 0.95rem; */
-  /* Desktop */
-  /* font-size: 1.1rem; */
+  /
 }
 
 .main-container {
@@ -97,22 +75,11 @@ main {
     clamp(1.3rem, 0.9127rem + 1.6526vw, 2.4rem);
 
   border-radius: clamp(0.5rem, 0.1259rem + 1.5962vw, 1.5625rem);
-  /* inline-size: 21.5rem; */
-  /* Moble */
-  /* padding-inline: 1.2rem; */
-  /* padding-block: 1.3rem; */
-  /* border-radius: 8px; */
-  /* Desktop */
-  /* padding-inline: 2.7rem; */
-  /* padding-block: 1.7rem 2.4rem; */
-  /* border-radius: 25px; */
+
 }
 .main-heading {
   font-size: clamp(1.5rem, 1.3063rem + 0.8263vw, 2.05rem);
-  /* Mobile */
-  /* font-size: 1.5rem; */
-  /* Desktop */
-  /* font-size: 2.05rem; */
+
 }
 .chart-container {
   display: flex;
@@ -122,16 +89,7 @@ main {
   padding-block-end: clamp(1.4rem, 1.2239rem + 0.7512vw, 1.9rem);
   border-bottom: 2px solid var(--cream);
   gap: clamp(0.75rem, 0.5915rem + 0.6761vw, 1.2rem);
-  /* Mobile */
-  /* margin-block-start: 2.5rem; */
-  /* padding-block-end: 1.4rem; */
-  /* border-bottom: 2px solid var(--cream); */
-  /* gap: 0.75rem; */
-  /* Mobile */
-  /* margin-block-start: 4rem; */
-  /* padding-block-end: 1.9rem; */
-  /* border-bottom: 2px solid var(--cream); */
-  /* gap: 1.2rem; */
+
 }
 
 .bar-container {
@@ -141,21 +99,13 @@ main {
   justify-content: end;
   position: relative;
   gap: clamp(0.3rem, 0.7056rem + -0.4507vw, 0.6rem);
-  /* Mobile */
-  /* gap: 0.6rem; */
-  /* Desktop */
-  /* gap: 0.3rem; */
+
 }
 
 .bar {
   height: clamp(9.4rem, 10.2113rem + -0.9014vw, 10rem);
   width: clamp(2.05875rem, 1.7066rem + 1.5023vw, 3.05875rem);
-  /* Mobile */
-  /* height: 10rem; */
-  /* width: 2.05875rem; */
-  /* Desktop */
-  /* height: 9.4rem; */
-  /* width: 3.05875rem; */
+  
   border-radius: 4px;
   background-color: var(--soft-red);
 }
@@ -190,20 +140,14 @@ main {
 .day-text {
   color: var(--medium-brown);
   font-size: clamp(0.8rem, 0.7296rem + 0.3005vw, 1rem);
-  /* Mobile */
-  /* font-size: 0.8rem; */
-  /* Desktop */
-  /* font-size: 1rem; */
+
 }
 .final-results-container {
   display: flex;
   justify-content: space-between;
 
   padding-block-start: clamp(1.5rem, 1.2535rem + 1.0516vw, 2.2rem);
-  /* Mobile */
-  /* padding-block-start: 1.5rem; *
-  /* Desktop */
-  /* padding-block-start: 2.2rem; */
+
 }
 
 .total-container,
@@ -216,16 +160,12 @@ main {
   line-height: 1;
 
   margin-block-end: clamp(0rem, -0.1408rem + 0.6009vw, 0.4rem);
-  /* Desktoop */
-  /* margin-block-end: 0.4rem; */
+  
 }
 .percentage-container > p:first-child {
   margin-inline-start: auto;
   font-size: clamp(0.95rem, 0.8972rem + 0.2254vw, 1.1rem);
-  /* Mobile */
-  /* font-size: 0.95rem; */
-  /* Desktop */
-  /* font-size: 1.1rem; */
+
 }
 .percentage-container > p:last-child {
   line-height: 1.9;
@@ -235,18 +175,12 @@ main {
   color: var(--medium-brown);
 
   font-size: clamp(0.95rem, 0.8866rem + 0.2704vw, 1.13rem);
-  /* Mobile */
-  /* font-size: 0.95rem; */
-  /* Desktop */
-  /* font-size: 1.13rem; */
+ 
 }
 
 .total-amount {
   font-size: clamp(1.9rem, 1.4775rem + 1.8028vw, 3.1rem);
-  /* Mobile */
-  /* font-size: 1.9rem; */
-  /* Dekstop */
-  /* font-size: 3.1rem; */
+
 }
 
 @media (min-width: 35rem) {
