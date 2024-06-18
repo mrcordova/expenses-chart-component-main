@@ -29,7 +29,6 @@ window.addEventListener("load", () => {
     for (const obj of data) {
       if (obj.day == day.id) {
         bar.setAttribute("data-amount", `$${obj.amount}`);
-        // bar.style.height = `${(obj.amount / highestAmount.amount) }`
       }
     }
     if (
@@ -41,17 +40,14 @@ window.addEventListener("load", () => {
   }
 
   const highestAmount = highestBar.getAttribute("data-amount").slice(1);
-  highestBar.style.height = "10rem";
+  const maxHeightStr = getComputedStyle(highestBar).getPropertyValue("height");
+  //   console.log(maxHeightStr);
+  const maxHeight = maxHeightStr.slice(0, maxHeightStr.indexOf("px")) / 16;
+  //   console.log(maxHeight);
   for (const barContainerDiv of barContainerDivs) {
     const bar = barContainerDiv.querySelector(".bar");
     const barAmount = bar.getAttribute("data-amount").slice(1);
 
-    console.log(highestBar.style.height.slice(0, 2));
-    bar.style.height = `${
-      (barAmount / highestAmount) * highestBar.style.height.slice(0, 2)
-    }rem`;
-    console.log(bar.style.height);
+    bar.style.height = `${(barAmount / highestAmount) * maxHeight}rem`;
   }
-  //   console.log(highestDayDiv);
 });
-// console.log(data);
