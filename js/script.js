@@ -11,19 +11,47 @@ const dayNames = {
 };
 window.addEventListener("load", () => {
   const barContainerDivs = document.querySelectorAll(".bar-container");
-  const highestAmount = data.reduce((currVal, nextVal) => {
-    if (currVal.amount > nextVal.amount) {
-      return currVal;
-    }
-    return nextVal;
-  });
+  //   const highestAmountObj = data.reduce((currVal, nextVal) => {
+  //     if (currVal.amount > nextVal.amount) {
+  //       return currVal;
+  //     }
+  //     return nextVal;
+  //   });
 
   const currentDay = dayNames[new Date().getDay()];
   const currentDayBar = document.getElementById(`${currentDay}`);
   currentDayBar.previousElementSibling.classList.add("bar-active");
-  //   console.log(currentDayBar.previousElementSibling);
+  let highestBar = barContainerDivs[0].querySelector(".bar");
+
   for (const barContainerDiv of barContainerDivs) {
-    barContainerDiv;
+    const bar = barContainerDiv.querySelector(".bar");
+    const day = barContainerDiv.querySelector(".day-text");
+    for (const obj of data) {
+      if (obj.day == day.id) {
+        bar.setAttribute("data-amount", `$${obj.amount}`);
+        // bar.style.height = `${(obj.amount / highestAmount.amount) }`
+      }
+    }
+    if (
+      bar.getAttribute("data-amount").slice(1) >
+      highestBar.getAttribute("data-amount").slice(1)
+    ) {
+      highestBar = bar;
+    }
   }
+
+  const highestAmount = highestBar.getAttribute("data-amount").slice(1);
+  highestBar.style.height = "10rem";
+  for (const barContainerDiv of barContainerDivs) {
+    const bar = barContainerDiv.querySelector(".bar");
+    const barAmount = bar.getAttribute("data-amount").slice(1);
+
+    console.log(highestBar.style.height.slice(0, 2));
+    bar.style.height = `${
+      (barAmount / highestAmount) * highestBar.style.height.slice(0, 2)
+    }rem`;
+    console.log(bar.style.height);
+  }
+  //   console.log(highestDayDiv);
 });
-console.log(data);
+// console.log(data);

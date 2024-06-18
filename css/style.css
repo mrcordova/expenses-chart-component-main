@@ -138,6 +138,7 @@ main {
   display: flex;
   flex-direction: column;
 
+  justify-content: end;
   position: relative;
   gap: clamp(0.3rem, 0.7056rem + -0.4507vw, 0.6rem);
   /* Mobile */
