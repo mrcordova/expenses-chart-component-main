@@ -12,11 +12,14 @@ const dayNames = {
 window.addEventListener("load", () => {
   const barContainerDivs = document.querySelectorAll(".bar-container");
 
+  // set the current bar
   const currentDay = dayNames[new Date().getDay()];
   const currentDayBar = document.getElementById(`${currentDay}`);
   currentDayBar.previousElementSibling.classList.add("bar-active");
+
   let highestBar = barContainerDivs[0].querySelector(".bar");
 
+  // set the amounts from json obj
   for (const barContainerDiv of barContainerDivs) {
     const bar = barContainerDiv.querySelector(".bar");
     const day = barContainerDiv.querySelector(".day-text");
@@ -33,6 +36,7 @@ window.addEventListener("load", () => {
     }
   }
 
+  // set height from the highest amount
   const highestAmount = highestBar.getAttribute("data-amount").slice(1);
   const maxHeightStr = getComputedStyle(highestBar).getPropertyValue("height");
   const maxHeight = maxHeightStr.slice(0, maxHeightStr.indexOf("px")) / 16;
